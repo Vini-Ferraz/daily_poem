@@ -23,7 +23,7 @@ function App() {
       hasBeenRead: false,
     },
   ];
-  let n = 0;
+  let n = 2;
   return (
     <>
       <Poem poem={poem[n].poem} />

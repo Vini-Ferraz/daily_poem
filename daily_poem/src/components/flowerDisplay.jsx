@@ -1,9 +1,11 @@
 export function Flower({ flower }) {
-  if (flower == "lily") {
-    return <img src="lily.png" />;
-  } else if (flower == "rose") {
-    return <img src="rose.png" />;
-  } else {
-    return <img src="tulips.png" />;
-  }
+  const flowerImages = {
+    lily: "lily.png",
+    rose: "rose.png",
+    tulip: "tulips.png",
+  };
+
+  const imageSrc = flowerImages[flower];
+
+  return <img src={imageSrc} alt={flower} />;
 }
