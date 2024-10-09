@@ -1,4 +1,5 @@
 import "./App.css";
+import { Flower } from "./components/flowerDisplay";
 import { Poem } from "./components/poemDisplay";
 
 function App() {
@@ -15,9 +16,20 @@ function App() {
       flower: "rose",
       hasBeenRead: false,
     },
+    {
+      poem: "Beneath bright skies, joy takes flight,\nTulip fields in colors bright.\nLaughter rings, a blissful cheer—\nHappiness near.",
+      emotion: "happiness",
+      flower: "tulip",
+      hasBeenRead: false,
+    },
   ];
-
-  return <Poem poem={poem[1].poem} />;
+  let n = 0;
+  return (
+    <>
+      <Poem poem={poem[n].poem} />
+      <Flower flower={poem[n].flower} />
+    </>
+  );
 }
 
 export default App;
