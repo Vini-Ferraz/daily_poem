@@ -36,7 +36,7 @@ export function Timer() {
 
   return (
     <div>
-      <p>Next poem in: {timeLeft}</p>
+      <p className="timer-font">Next poem in: {timeLeft}</p>
     </div>
   );
 }
