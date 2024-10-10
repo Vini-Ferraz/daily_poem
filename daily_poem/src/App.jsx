@@ -1,6 +1,7 @@
 import "./App.css";
 import { Flower } from "./components/flowerDisplay";
 import { Poem } from "./components/poemDisplay";
+import { Timer } from "./components/timer";
 
 function App() {
   const poem = [
@@ -26,6 +27,7 @@ function App() {
   let n = 2;
   return (
     <>
+      <Timer />
       <Poem poem={poem[n].poem} />
       <Flower flower={poem[n].flower} />
     </>
