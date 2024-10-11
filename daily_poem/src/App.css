@@ -15,15 +15,15 @@
   background-color: var(--background-color);
 }
 
-.timer-font,
-.poem-font {
+#timer-font,
+#poem-font {
   color: var(--font-color);
 }
 
-.timer-font {
+#timer-font {
   font-family: "Roboto Serif", serif;
 }
 
-.poem-font {
+#poem-font {
   font-family: "Courier Prime", monospace;
 }
