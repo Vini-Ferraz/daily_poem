@@ -1,5 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #1b1b1b;
+  --font-color: #e4e4e4;
+}
+
+#background {
+  background-color: var(--background-color);
+}
+
+.timer-font,
+.poem-font {
+  color: var(--font-color);
+}
+
 .timer-font {
   font-family: "Roboto Serif", serif;
 }

@@ -26,11 +26,11 @@ function App() {
   ];
   let n = 2;
   return (
-    <>
+    <main id="background">
       <Timer />
       <Poem poem={poem[n].poem} />
       <Flower flower={poem[n].flower} />
-    </>
+    </main>
   );
 }
 
