@@ -45,9 +45,9 @@
 
 .rose-image,
 .tulip-image,
-.lily-image {
+.lily-image,
+.oleander-image {
   position: absolute;
-  z-index: 10;
 }
 
 .rose-image {
@@ -64,4 +64,10 @@
   width: 277px;
   left: -45px;
   bottom: -150px;
+}
+
+.oleander-image {
+  height: 480px;
+  bottom: -90px;
+  left: -50px;
 }

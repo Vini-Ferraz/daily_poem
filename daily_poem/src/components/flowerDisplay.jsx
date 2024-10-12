@@ -3,6 +3,7 @@ export function Flower({ flower }) {
     lily: "lily.png",
     rose: "rose.png",
     tulip: "tulips.png",
+    oleander: "oleander.png",
   };
 
   const imageSrc = flowerImages[flower];
