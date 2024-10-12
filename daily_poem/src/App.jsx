@@ -2,9 +2,10 @@ import "./App.css";
 import { Flower } from "./components/flowerDisplay";
 import { Poem } from "./components/poemDisplay";
 import { Timer } from "./components/timer";
+import { useState, useEffect } from "react";
 
 function App() {
-  const poem = [
+  const poems = [
     {
       poem: "Beneath the calm, soft winds play,\nQuiet thoughts in gentle sway.\nTime slows down, a soothing stream—\nHearts in dream.",
       emotion: "peace",
@@ -24,12 +25,40 @@ function App() {
       hasBeenRead: false,
     },
   ];
-  let n = 1;
+
+  // Estado para armazenar o índice do poema atual
+  const [currentPoemIndex, setCurrentPoemIndex] = useState(0);
+
+  useEffect(() => {
+    // Função para verificar e atualizar o poema com base no dia
+    const checkAndUpdatePoem = () => {
+      const today = new Date().toDateString(); // Data de hoje
+      const storedDate = localStorage.getItem("lastVisitDate");
+      const storedPoemIndex = localStorage.getItem("currentPoemIndex");
+
+      // Se a data mudou ou não existe, atualizamos o poema
+      if (storedDate !== today) {
+        const newPoemIndex = storedPoemIndex
+          ? (parseInt(storedPoemIndex) + 1) % poems.length // Incrementa e faz a rotação dos poemas
+          : 0; // Se não tiver nada salvo, começa do primeiro
+
+        setCurrentPoemIndex(newPoemIndex); // Atualiza o estado com o novo índice
+        localStorage.setItem("lastVisitDate", today); // Salva a data de hoje
+        localStorage.setItem("currentPoemIndex", newPoemIndex); // Salva o novo índice do poema
+      } else {
+        // Se for o mesmo dia, mantém o poema atual
+        setCurrentPoemIndex(storedPoemIndex ? parseInt(storedPoemIndex) : 0);
+      }
+    };
+
+    checkAndUpdatePoem(); // Executa quando o componente monta
+  }, [poems]); // Chama essa função sempre que a lista de poemas mudar
+
   return (
     <main id="background">
       <Timer />
-      <Poem poem={poem[n].poem} />
-      <Flower flower={poem[n].flower} />
+      <Poem poem={poems[currentPoemIndex].poem} />
+      <Flower flower={poems[currentPoemIndex].flower} />
     </main>
   );
 }
