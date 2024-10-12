@@ -24,19 +24,23 @@
   align-items: center;
 }
 
-#timer-font,
-#poem-font {
+#timer,
+#poem {
   color: var(--font-color);
 }
 
-#timer-font {
+#timer {
   font-family: "Roboto Serif", serif;
-  font-size: 15px;
+  font-size: 20px;
+  padding-top: 40%;
+  padding-bottom: 100%;
 }
 
-#poem-font {
+#poem {
   font-family: "Courier Prime", monospace;
-  font-size: 20px;
+  font-size: 25px;
+  line-height: 150%;
+  padding: 0 5%;
 }
 
 .rose-image,

@@ -24,6 +24,12 @@ function App() {
       flower: "tulip",
       hasBeenRead: false,
     },
+    {
+      poem: "Through winds that howl, you stand so tall,\nA heart unbowed, you'll never fall.\nIn strength you rise, through storm and flame—\nBrave by name.",
+      emotion: "brave",
+      flower: "oleander",
+      hasBeenRead: false,
+    },
   ];
 
   // Estado para armazenar o índice do poema atual
