@@ -38,7 +38,7 @@ function App() {
   useEffect(() => {
     // Função para verificar e atualizar o poema com base no dia
     const checkAndUpdatePoem = () => {
-      const today = new Date().toDateString(); // Data de hoje
+      const today = "new Date().toDateString()"; // Data de hoje
       const storedDate = localStorage.getItem("lastVisitDate");
       const storedPoemIndex = localStorage.getItem("currentPoemIndex");
 

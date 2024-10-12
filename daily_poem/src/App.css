@@ -51,8 +51,9 @@
 }
 
 .rose-image {
-  width: 348px;
-  left: -100px;
+  width: 300px;
+  left: -40px;
+  bottom: 10px;
 }
 
 .tulip-image {
