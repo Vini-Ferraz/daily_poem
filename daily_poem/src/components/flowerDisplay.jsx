@@ -7,5 +7,5 @@ export function Flower({ flower }) {
 
   const imageSrc = flowerImages[flower];
 
-  return <img src={imageSrc} alt={flower} id="flower-image" />;
+  return <img src={imageSrc} alt={flower} className={`${flower}-image`} />;
 }

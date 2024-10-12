@@ -55,11 +55,11 @@ function App() {
   }, [poems]); // Chama essa função sempre que a lista de poemas mudar
 
   return (
-    <main id="background">
+    <body id="background">
       <Timer />
       <Poem poem={poems[currentPoemIndex].poem} />
       <Flower flower={poems[currentPoemIndex].flower} />
-    </main>
+    </body>
   );
 }
 

@@ -14,6 +14,7 @@
 #background {
   background-color: var(--background-color);
   height: 100vh;
+  overflow: hidden;
 }
 
 #timer-font,
@@ -31,6 +32,25 @@
   font-size: 20px;
 }
 
-#flower-image {
-  height: 200px;
+.rose-image,
+.tulip-image,
+.lily-image {
+  position: absolute;
+  z-index: 10;
+}
+
+.rose-image {
+  width: 348px;
+  left: -100px;
+}
+
+.tulip-image {
+  height: 209px;
+  bottom: 0px;
+}
+
+.lily-image {
+  width: 277px;
+  left: -45px;
+  bottom: -150px;
 }
