@@ -17,6 +17,13 @@
   overflow: hidden;
 }
 
+#timer-and-poem-box {
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #timer-font,
 #poem-font {
   color: var(--font-color);

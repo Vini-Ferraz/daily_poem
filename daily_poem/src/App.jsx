@@ -56,8 +56,10 @@ function App() {
 
   return (
     <body id="background">
-      <Timer />
-      <Poem poem={poems[currentPoemIndex].poem} />
+      <div id="timer-and-poem-box">
+        <Timer />
+        <Poem poem={poems[currentPoemIndex].poem} />
+      </div>
       <Flower flower={poems[currentPoemIndex].flower} />
     </body>
   );
