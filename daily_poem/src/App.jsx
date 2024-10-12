@@ -24,7 +24,7 @@ function App() {
       hasBeenRead: false,
     },
   ];
-  let n = 2;
+  let n = 1;
   return (
     <main id="background">
       <Timer />
