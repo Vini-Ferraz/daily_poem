@@ -6,6 +6,15 @@
   box-sizing: border-box;
 }
 
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 :root {
   --background-color: #1b1b1b;
   --font-color: #e4e4e4;

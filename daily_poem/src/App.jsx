@@ -38,7 +38,7 @@ function App() {
   useEffect(() => {
     // Função para verificar e atualizar o poema com base no dia
     const checkAndUpdatePoem = () => {
-      const today = new Date().toDateString(); // Data de hoje
+      const today = "new Date().toDateString()"; // Data de hoje
       const storedDate = localStorage.getItem("lastVisitDate");
       const storedPoemIndex = localStorage.getItem("currentPoemIndex");
 
@@ -61,13 +61,13 @@ function App() {
   }, [poems]); // Chama essa função sempre que a lista de poemas mudar
 
   return (
-    <body id="background">
+    <main id="background">
       <div id="timer-and-poem-box">
         <Timer />
         <Poem poem={poems[currentPoemIndex].poem} />
       </div>
       <Flower flower={poems[currentPoemIndex].flower} />
-    </body>
+    </main>
   );
 }
 

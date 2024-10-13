@@ -13,5 +13,5 @@ export function Flower({ flower }) {
 
   const FlowerComponent = flowerComponents[flower];
 
-  return <FlowerComponent />;
+  return <FlowerComponent flower={flower} />;
 }
