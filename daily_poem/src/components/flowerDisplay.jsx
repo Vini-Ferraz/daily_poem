@@ -1,12 +1,17 @@
+import { Lily } from "./flowers/lily";
+import { Rose } from "./flowers/rose";
+import { Oleander } from "./flowers/oleander";
+import { Tulip } from "./flowers/tulips";
+
 export function Flower({ flower }) {
-  const flowerImages = {
-    lily: "lily.webp",
-    rose: "rose.webp",
-    tulip: "tulips.webp",
-    oleander: "oleander.webp",
+  const flowerComponents = {
+    lily: Lily,
+    rose: Rose,
+    tulip: Tulip,
+    oleander: Oleander,
   };
 
-  const imageSrc = flowerImages[flower];
+  const FlowerComponent = flowerComponents[flower];
 
-  return <img src={imageSrc} alt={flower} className={`${flower}-image`} />;
+  return <FlowerComponent />;
 }
