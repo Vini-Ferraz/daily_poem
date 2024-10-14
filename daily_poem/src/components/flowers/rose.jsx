@@ -6,7 +6,8 @@ export function Rose() {
   const [isDark, setIsDark] = useState(false);
   const rainInterval = useRef(null); // UseRef para armazenar o intervalo
 
-  const handleMouseDown = () => {
+  const handleMouseDown = (event) => {
+    event.preventDefault();
     rainSound.play();
     // Inicia a criação das gotas de chuva repetidamente a cada 100ms
     rainInterval.current = setInterval(() => {
@@ -17,7 +18,8 @@ export function Rose() {
     setIsDark(true);
   };
 
-  const handleMouseUp = () => {
+  const handleMouseUp = (event) => {
+    event.preventDefault();
     rainSound.pause();
     // Para de escurecer a tela
     setIsDark(false);
