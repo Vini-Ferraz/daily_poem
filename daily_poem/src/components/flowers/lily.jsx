@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const popSound = new Audio("sound-effects/click.mp3");
 
-export function Lily({ flower }) {
+export function Lily() {
   const [flowers, setFlowers] = useState([]);
 
   const handleFlowerClick = () => {
@@ -32,7 +32,7 @@ export function Lily({ flower }) {
       <img
         src="lily.webp"
         alt="lily-flower"
-        onClick={flower == "lily" ? handleFlowerClick : null}
+        onClick={handleFlowerClick}
         style={{ cursor: "pointer" }}
       />
 
