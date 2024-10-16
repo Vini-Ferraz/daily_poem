@@ -28,6 +28,7 @@ export function Lily() {
     <div>
       <img
         src="flowers-images/lily.webp"
+        className="lily-image"
         alt="lily-flower"
         onClick={handleFlowerClick}
         style={{ cursor: "pointer" }}
