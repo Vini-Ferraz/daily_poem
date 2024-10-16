@@ -1,3 +1,9 @@
 export function Poem({ poem }) {
-  return <p id="poem">{poem}</p>;
+  return (
+    <div id="poem">
+      {poem.map((line, index) => (
+        <p key={index}>{line}</p>
+      ))}
+    </div>
+  );
 }

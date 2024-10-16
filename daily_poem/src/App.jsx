@@ -7,7 +7,12 @@ import { useState, useEffect } from "react";
 function App() {
   const poems = [
     {
-      poem: "Beneath the calm, soft winds play,\nQuiet thoughts in gentle sway.\nTime slows down, a soothing stream—\nHearts in dream.",
+      poem: [
+        "In her eyes, the world does shine,",
+        "Reflections of a love divine.",
+        "Secrets linger, a timeless glow—",
+        "Feelings bloom and gently flow.",
+      ],
       flower: "lily",
     },
     {
@@ -52,9 +57,9 @@ function App() {
     <main id="background">
       <div id="timer-and-poem-box">
         <Timer />
-        <Poem poem={poems[2].poem} />
+        <Poem poem={poems[currentPoemIndex].poem} />
       </div>
-      <Flower flower={poems[2].flower} />
+      <Flower flower={poems[currentPoemIndex].flower} />
     </main>
   );
 }
