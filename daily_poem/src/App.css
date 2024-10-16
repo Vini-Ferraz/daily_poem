@@ -122,9 +122,10 @@
 }
 
 .lily-image {
-  width: 200px;
+  width: 2000px;
   left: 0px;
   bottom: -40px;
+  background-color: red;
 }
 
 .oleander-image {
