@@ -72,9 +72,9 @@ function App() {
     <main id="background">
       <div id="timer-and-poem-box">
         <Timer />
-        <Poem poem={poems[1].poem} />
+        <Poem poem={poems[2].poem} />
       </div>
-      <Flower flower={poems[1].flower} />
+      <Flower flower={poems[2].flower} />
     </main>
   );
 }
