@@ -41,7 +41,7 @@ function App() {
         localStorage.setItem("lastVisitDate", today);
         localStorage.setItem("currentPoemIndex", newPoemIndex);
       } else {
-        setCurrentPoemIndex(storedPoemIndex ? parseInt(storedPoemIndex) : 1);
+        setCurrentPoemIndex(storedPoemIndex ? parseInt(storedPoemIndex) : 0);
       }
     };
 
@@ -52,9 +52,9 @@ function App() {
     <main id="background">
       <div id="timer-and-poem-box">
         <Timer />
-        <Poem poem={poems[currentPoemIndex].poem} />
+        <Poem poem={poems[1].poem} />
       </div>
-      <Flower flower={poems[currentPoemIndex].flower} />
+      <Flower flower={poems[1].flower} />
     </main>
   );
 }
