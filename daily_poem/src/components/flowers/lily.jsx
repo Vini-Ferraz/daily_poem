@@ -42,8 +42,8 @@ export function Lily() {
             position: "absolute",
             top: `${flower.y}px`,
             left: `${flower.x}px`,
-            width: "150px",
-            height: "150px",
+            width: "100px",
+            height: "100px",
             opacity: 1,
             animation: "fadeOut 5s forwards",
           }}
