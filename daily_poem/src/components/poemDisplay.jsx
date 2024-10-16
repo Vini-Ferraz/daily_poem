@@ -1,3 +1,3 @@
 export function Poem({ poem }) {
-  return <pre id="poem">{poem}</pre>;
+  return <p id="poem">{poem}</p>;
 }
