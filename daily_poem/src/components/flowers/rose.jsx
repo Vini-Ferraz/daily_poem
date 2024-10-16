@@ -4,37 +4,32 @@ const rainSound = new Audio("sound-effects/rain.mp3");
 
 export function Rose() {
   const [isDark, setIsDark] = useState(false);
-  const rainInterval = useRef(null); // UseRef para armazenar o intervalo
-
+  const rainInterval = useRef(null);
   const handleMouseDown = (event) => {
     event.preventDefault();
     rainSound.play();
-    // Inicia a criação das gotas de chuva repetidamente a cada 100ms
     rainInterval.current = setInterval(() => {
       createRainDrop();
     }, 20);
 
-    // Escurece a tela
     setIsDark(true);
   };
 
   const handleMouseUp = (event) => {
     event.preventDefault();
     rainSound.pause();
-    // Para de escurecer a tela
+
     setIsDark(false);
 
-    // Limpa o intervalo, parando a criação de novas gotas de chuva
     clearInterval(rainInterval.current);
   };
 
   const createRainDrop = () => {
     const darkOverlay = document.querySelector(".dark-overlay");
 
-    // Verifica se a dark-overlay existe
     if (!darkOverlay) {
       console.error("dark-overlay não encontrada");
-      return; // Se não encontrar a div, sai da função
+      return;
     }
 
     const rainDrop = document.createElement("div");

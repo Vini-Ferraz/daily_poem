@@ -8,12 +8,12 @@ export function Tulip() {
   const handleFlowerClick = () => {
     popSound.play();
     const newPinkButterFly = {
-      id: Date.now(), // ID único baseado no timestamp
+      id: Date.now(),
       x: Math.floor(Math.random() * (window.innerWidth - 150)),
       y: Math.floor(Math.random() * (window.innerHeight - 150)),
     };
     const newYellowButterFly = {
-      id: Date.now(), // ID único baseado no timestamp
+      id: Date.now(),
       x: Math.floor(Math.random() * (window.innerWidth - 150)),
       y: Math.floor(Math.random() * (window.innerHeight - 150)),
     };
