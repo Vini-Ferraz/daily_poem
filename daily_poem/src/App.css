@@ -15,6 +15,29 @@
   }
 }
 
+@keyframes pink-butter-fly {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(100px, -300px); /* Move para cima (desaparece) */
+    opacity: 0; /* Desaparece */
+  }
+}
+
+@keyframes yellow-butter-fly {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-100px, -300px); /* Move para cima (desaparece) */
+    opacity: 0; /* Desaparece */
+  }
+}
+
 @keyframes fall {
   0% {
     transform: translate(0, 0);
