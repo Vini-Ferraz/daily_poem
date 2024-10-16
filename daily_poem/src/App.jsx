@@ -24,7 +24,7 @@ function App() {
     },
   ];
 
-  const [currentPoemIndex, setCurrentPoemIndex] = useState(0);
+  const [currentPoemIndex, setCurrentPoemIndex] = useState(1);
 
   useEffect(() => {
     const checkAndUpdatePoem = () => {
