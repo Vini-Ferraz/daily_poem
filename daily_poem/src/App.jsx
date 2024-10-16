@@ -16,15 +16,30 @@ function App() {
       flower: "lily",
     },
     {
-      poem: "In the fire’s glow, passion burns,\nDesires grow as the world turns.\nHearts ignite, a burning flame—\nLove's sweet game.",
+      poem: [
+        "In your gaze, the past unfolds,",
+        "Whispers of stories, long retold.",
+        "A bond unbroken, hearts align—",
+        "In that moment, you felt like mine.",
+      ],
       flower: "rose",
     },
     {
-      poem: "Beneath bright skies, joy takes flight,\nTulip fields in colors bright.\nLaughter rings, a blissful cheer—\nHappiness near.",
+      poem: [
+        "Across the seas, my heart will sail,",
+        "Through storms and winds, I shall not fail.",
+        "For love's pure light, a guiding star—",
+        "No distance can keep us apart, no matter how far.",
+      ],
       flower: "tulip",
     },
     {
-      poem: "Through winds that howl, you stand so tall,\nA heart unbowed, you'll never fall.\nIn strength you rise, through storm and flame—\nBrave by name.",
+      poem: [
+        "In heaven's grace, you were designed,",
+        "The fairest angel, truly divine.",
+        "Sent to earth, a gift so rare—",
+        "A beauty bright, beyond compare.",
+      ],
       flower: "oleander",
     },
   ];
