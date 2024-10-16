@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 
-const rainSound = new Audio("daily_poem/sound-effects/rain.mp3");
+const rainSound = new Audio("sound-effects/rain.mp3");
 
 export function Rose() {
   const [isDark, setIsDark] = useState(false);
@@ -50,7 +50,7 @@ export function Rose() {
       <div className={`dark-overlay ${isDark ? "active" : ""}`}></div>
 
       <img
-        src="daily_poem/flowers-images/rose.webp"
+        src="flowers-images/rose.webp"
         alt="Rose"
         className="rose-image"
         style={{ cursor: "pointer" }}

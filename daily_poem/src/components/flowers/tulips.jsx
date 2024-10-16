@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const popSound = new Audio("daily_poem/sound-effects/click.mp3");
+const popSound = new Audio("sound-effects/click.mp3");
 
 export function Tulip() {
   const [pinkButterFlies, setPinkButterFlies] = useState([]);
@@ -47,7 +47,7 @@ export function Tulip() {
   return (
     <>
       <img
-        src="daily_poem/flowers-images/tulips.webp"
+        src="flowers-images/tulips.webp"
         alt="Tulip"
         className="tulip-image"
         onClick={handleFlowerClick}

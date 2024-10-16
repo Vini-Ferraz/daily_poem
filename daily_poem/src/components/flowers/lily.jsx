@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const popSound = new Audio("daily_poem/sound-effects/click.mp3");
+const popSound = new Audio("sound-effects/click.mp3");
 
 export function Lily() {
   const [flowers, setFlowers] = useState([]);
@@ -27,7 +27,7 @@ export function Lily() {
   return (
     <div>
       <img
-        src="daily_poem/flowers-images/lily.webp"
+        src="flowers-images/lily.webp"
         alt="lily-flower"
         onClick={handleFlowerClick}
         style={{ cursor: "pointer" }}
