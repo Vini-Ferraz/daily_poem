@@ -44,9 +44,6 @@
     opacity: 1;
   }
   25% {
-    transform: translate(-10px, 25vh);
-  }
-  50% {
     transform: translate(10px, 50vh);
   }
   100% {
