@@ -54,10 +54,12 @@ export function Rose() {
         alt="Rose"
         className="rose-image"
         style={{ cursor: "pointer" }}
-        onMouseDown={handleMouseDown}
-        onMouseUp={handleMouseUp}
-        onTouchStart={handleMouseDown}
-        onTouchEnd={handleMouseUp}
+        //onMouseDown={handleMouseDown}
+        //onMouseUp={handleMouseUp}
+        //onTouchStart={handleMouseDown}
+        //onTouchEnd={handleMouseUp}
+        onClick={handleMouseDown}
+        onDoubleClick={handleMouseUp}
       />
     </>
   );
