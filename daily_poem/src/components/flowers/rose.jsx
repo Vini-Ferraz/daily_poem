@@ -10,7 +10,7 @@ export function Rose() {
     rainSound.play();
     rainInterval.current = setInterval(() => {
       createRainDrop();
-    }, 20);
+    }, 30);
 
     setIsDark(true);
   };

@@ -43,9 +43,7 @@
     transform: translate(0, 0);
     opacity: 1;
   }
-  25% {
-    transform: translate(10px, 25vh);
-  }
+
   100% {
     transform: translate(0px, 100vh);
     opacity: 0;
@@ -148,5 +146,5 @@
   border-bottom-left-radius: 2px;
   border-top-right-radius: 2px;
   opacity: 1;
-  animation: fall 1000ms linear forwards; /* Animação de queda */
+  animation: fall 1500ms linear forwards; /* Animação de queda */
 }
