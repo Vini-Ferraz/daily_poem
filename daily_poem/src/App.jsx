@@ -61,7 +61,7 @@ function App() {
         localStorage.setItem("lastVisitDate", today);
         localStorage.setItem("currentPoemIndex", newPoemIndex);
       } else {
-        setCurrentPoemIndex(storedPoemIndex ? parseInt(storedPoemIndex) : 0);
+        setCurrentPoemIndex(storedPoemIndex ? parseInt(storedPoemIndex) : 1);
       }
     };
 
