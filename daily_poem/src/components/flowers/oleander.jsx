@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./styles.css"; // Importar as animações e estilos
 
 export function Oleander() {
   const [emojis, setEmojis] = useState([]);
@@ -42,6 +41,7 @@ export function Oleander() {
             position: "absolute",
             top: 0,
             left: `${emoji.x}px`,
+            zIndex: 100,
           }}
         >
           {emoji.emoji}
