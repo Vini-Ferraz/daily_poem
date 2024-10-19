@@ -151,7 +151,7 @@
 }
 
 .oleander-image {
-  height: 275px;
+  height: 10px;
   bottom: 0px;
   left: 0px;
 }
@@ -171,19 +171,9 @@
   animation: fall 1500ms linear forwards; /* Animação de queda */
 }
 
-#emoji-layer {
-  width: 100vw;
-  height: 100vh;
-  pointer-events: none;
-  background-color: red;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 .emoji {
   position: absolute;
-  font-size: 4.5vw;
+  font-size: 7vw;
   animation: fallAndRotate 3s ease-in forwards;
-  pointer-events: none; /* para evitar interação com os emojis */
+  pointer-events: none;
 }

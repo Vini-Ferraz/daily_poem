@@ -31,7 +31,6 @@ export function Lily() {
         className="lily-image"
         alt="lily-flower"
         onClick={handleFlowerClick}
-        style={{ cursor: "pointer" }}
       />
 
       {flowers.map((flower) => (

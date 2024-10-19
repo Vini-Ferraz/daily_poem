@@ -12,10 +12,9 @@ export function Oleander() {
     };
     setEmojis((prevEmojis) => [...prevEmojis, newEmoji]);
 
-    // Remover o emoji após a animação (2 segundos)
     setTimeout(() => {
       setEmojis((prevEmojis) => prevEmojis.filter((e) => e.id !== newEmoji.id));
-    }, 2000);
+    }, 3000);
   };
 
   const getRandomEmoji = () => {
@@ -25,21 +24,20 @@ export function Oleander() {
 
   return (
     <>
-      <div id="emoji-layer">
-        {emojis.map((emoji) => (
-          <div
-            key={emoji.id}
-            className="emoji"
-            style={{
-              position: "absolute",
-              top: 0,
-              left: `${emoji.x}px`,
-            }}
-          >
-            {emoji.emoji}
-          </div>
-        ))}
-      </div>
+      {/* Renderizar os emojis com a animação */}
+      {emojis.map((emoji) => (
+        <div
+          key={emoji.id}
+          className="emoji"
+          style={{
+            position: "absolute",
+            top: 0,
+            left: `${emoji.x}px`,
+          }}
+        >
+          {emoji.emoji}
+        </div>
+      ))}
       <img
         src="flowers-images/oleander.webp"
         alt="Oleander"
