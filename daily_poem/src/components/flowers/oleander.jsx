@@ -25,21 +25,21 @@ export function Oleander() {
 
   return (
     <>
-      {/* Renderizar os emojis com a animação */}
-      {emojis.map((emoji) => (
-        <div
-          key={emoji.id}
-          className="emoji"
-          style={{
-            position: "absolute",
-            top: 0,
-            left: `${emoji.x}px`,
-            zIndex: 100,
-          }}
-        >
-          {emoji.emoji}
-        </div>
-      ))}
+      <div id="emoji-layer">
+        {emojis.map((emoji) => (
+          <div
+            key={emoji.id}
+            className="emoji"
+            style={{
+              position: "absolute",
+              top: 0,
+              left: `${emoji.x}px`,
+            }}
+          >
+            {emoji.emoji}
+          </div>
+        ))}
+      </div>
       <img
         src="flowers-images/oleander.webp"
         alt="Oleander"

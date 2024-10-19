@@ -171,6 +171,12 @@
   animation: fall 1500ms linear forwards; /* Animação de queda */
 }
 
+#emoji-layer {
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+}
+
 .emoji {
   position: absolute;
   font-size: 4.5vw;
