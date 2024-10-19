@@ -42,6 +42,42 @@ function App() {
       ],
       flower: "oleander",
     },
+    {
+      poem: [
+        "In your laughter, the world feels bright,",
+        "A guiding star in the darkest night.",
+        "With every heartbeat, our spirits intertwine—",
+        "In this journey, I know you’re mine.",
+      ],
+      flower: "lily",
+    },
+    {
+      poem: [
+        "In every curve, a masterpiece shown,",
+        "A work of art, perfectly grown.",
+        "Each gentle movement, a dance so fine—",
+        "In your essence, I see the divine.",
+      ],
+      flower: "rose",
+    },
+    {
+      poem: [
+        "In your triumphs, my heart swells with pride,",
+        "A fierce spirit, with courage as your guide.",
+        "With every challenge, you brightly shine—",
+        "In your journey, I’m proud to call you mine.",
+      ],
+      flower: "tulip",
+    },
+    {
+      poem: [
+        "In your laughter, I see a light,",
+        "A gentle spirit, steadfast and bright.",
+        "With tender care, you’ll always thrive—",
+        "In every moment, love will arrive.",
+      ],
+      flower: "oleander",
+    },
   ];
 
   const [currentPoemIndex, setCurrentPoemIndex] = useState(0);
