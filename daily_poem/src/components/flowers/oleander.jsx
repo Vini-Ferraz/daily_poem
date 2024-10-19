@@ -21,7 +21,39 @@ export function Oleander() {
   };
 
   const getRandomEmoji = () => {
-    const emojiList = ["💖", "🌹", "🌸", "💐", "❤️"]; // Emojis relacionados a amor/flores
+    const emojiList = [
+      "💖",
+      "🌹",
+      "🌸",
+      "💐",
+      "❤️",
+      "😊",
+      "🐶",
+      "🐱",
+      "🦋",
+      "🌼",
+      "🧸",
+      "💞",
+      "🍭",
+      "🌈",
+      "💕",
+      "🍬",
+      "🌻",
+      "✨",
+      "🥰",
+      "👶",
+      "🍀",
+      "🍧",
+      "🐰",
+      "🍓",
+      "🦄",
+      "🎀",
+      "🌷",
+      "💗",
+      "😘",
+      "🦉",
+      "👽",
+    ];
     return emojiList[Math.floor(Math.random() * emojiList.length)];
   };
 
