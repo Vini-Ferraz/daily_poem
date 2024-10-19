@@ -25,13 +25,6 @@ export function Oleander() {
 
   return (
     <>
-      <img
-        src="flowers-images/oleander.webp"
-        alt="Oleander"
-        className="oleander-image"
-        onClick={handleFlowerClick}
-      />
-
       {/* Renderizar os emojis com a animação */}
       {emojis.map((emoji) => (
         <div
@@ -47,6 +40,12 @@ export function Oleander() {
           {emoji.emoji}
         </div>
       ))}
+      <img
+        src="flowers-images/oleander.webp"
+        alt="Oleander"
+        className="oleander-image"
+        onClick={handleFlowerClick}
+      />
     </>
   );
 }
