@@ -1,9 +1,12 @@
 import { useState } from "react";
 
+const popSound = new Audio("sound-effects/click.mp3");
+
 export function Oleander() {
   const [emojis, setEmojis] = useState([]);
 
   const handleFlowerClick = () => {
+    popSound.play();
     // Gerar emojis ao clicar na flor
     const newEmoji = {
       id: Date.now(), // ID único
