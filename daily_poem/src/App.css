@@ -66,7 +66,7 @@
     transform: translateX(-20px) rotate(135deg);
   }
   100% {
-    top: 100vh;
+    top: calc(100vh - 50px);
     transform: translateX(0px) rotate(180deg);
     opacity: 0;
   }
@@ -151,7 +151,7 @@
 }
 
 .oleander-image {
-  height: 10px;
+  height: 50vw;
   bottom: 0px;
   left: 0px;
 }
